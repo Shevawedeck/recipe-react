@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ICuisine, IRecipe, IUsername } from "./DataInterfaces"
+import { ICuisine, IUsername } from "./DataInterfaces"
 import { FieldValues, useForm } from "react-hook-form"
 import { blankRecipe, deleteRecipe, fetchCuisines, fetchRecipeById, fetchUsernames, postRecipe } from "./DataUtil";
 import { useNavigate, useParams } from "react-router-dom";

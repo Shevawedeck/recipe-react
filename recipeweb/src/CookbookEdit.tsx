@@ -1,6 +1,6 @@
 import { FieldValues, useForm } from "react-hook-form"
 import { useEffect, useState } from "react";
-import { ICuisine, IRecipe, IUsername } from "./DataInterfaces"
+import { IUsername } from "./DataInterfaces"
 import { useNavigate, useParams } from "react-router-dom";
 import { blankCookbook, deleteCookbook, fetchCookbookById, fetchUsernames, postCookbook } from "./DataUtil";
 

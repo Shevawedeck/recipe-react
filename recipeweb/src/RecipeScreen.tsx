@@ -1,20 +1,12 @@
 import { useEffect, useState } from "react"
 import { IRecipe } from "./DataInterfaces"
 import RecipeCard from './RecipeCard'
-import { blankRecipe, fetchRecipes } from "./DataUtil";
-import { Link, useNavigate } from "react-router-dom"
-import RecipeEdit from "./RecipeEdit";
-
-interface Props {
-    onEdit: (recipe: IRecipe) => void;
-}
+import { fetchRecipes } from "./DataUtil";
+import { useNavigate } from "react-router-dom"
 
 export default function RecipeScreen() {
     const [recipeList, setRecipeList] = useState<IRecipe[]>([]);
     const [isLoading, setIsLoading] = useState(false);
-
-    //const [recipeForEdit, setRecipeForEdit] = useState(blankRecipe);
-
     const navigate = useNavigate();
 
     useEffect(() => {
