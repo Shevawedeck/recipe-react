@@ -1,0 +1,591 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "RecipeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Cookbook": {
+      "get": {
+        "tags": [
+          "Cookbook"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BizCookbook"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Cookbook/{id}": {
+      "get": {
+        "tags": [
+          "Cookbook"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BizCookbook"
+            }
+          }
+        }
+      }
+    },
+    "/api/Cuisine": {
+      "get": {
+        "tags": [
+          "Cuisine"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BizCuisine"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Cuisine/{id}": {
+      "get": {
+        "tags": [
+          "Cuisine"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BizCuisine"
+            }
+          }
+        }
+      }
+    },
+    "/api/Meal": {
+      "get": {
+        "tags": [
+          "Meal"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BizMeal"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Meal/{id}": {
+      "get": {
+        "tags": [
+          "Meal"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BizMeal"
+            }
+          }
+        }
+      }
+    },
+    "/api/Recipe": {
+      "get": {
+        "tags": [
+          "Recipe"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BizRecipe"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Recipe"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "RecipeId",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "UsernameId",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "CuisineId",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "RecipeName",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Calories",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "DateDrafted",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "formData",
+            "name": "DatePublished",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "formData",
+            "name": "DateArchived",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "formData",
+            "name": "Vegan",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "RecipeStatus",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "UsernameName",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "NumIngredients",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "RecipeImage",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "CuisineType",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Recipe"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Recipe/{id}": {
+      "get": {
+        "tags": [
+          "Recipe"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BizRecipe"
+            }
+          }
+        }
+      }
+    },
+    "/api/Recipe/getbycookbook/{cookbookname}": {
+      "get": {
+        "tags": [
+          "Recipe"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "cookbookname",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BizRecipe"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Recipe/getbycuisine/{cuisinetype}": {
+      "get": {
+        "tags": [
+          "Recipe"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "cuisinetype",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BizRecipe"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Recipe/usernames": {
+      "get": {
+        "tags": [
+          "Recipe"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BizUsername"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Recipe/cuisines": {
+      "get": {
+        "tags": [
+          "Recipe"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BizCuisine"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "BizCookbook": {
+      "type": "object",
+      "properties": {
+        "cookbookId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "usernameId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cookbookName": {
+          "type": "string"
+        },
+        "price": {
+          "format": "double",
+          "type": "number"
+        },
+        "skillDesc": {
+          "type": "string"
+        },
+        "isActive": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BizCuisine": {
+      "type": "object",
+      "properties": {
+        "cuisineId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cuisineType": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BizMeal": {
+      "type": "object",
+      "properties": {
+        "mealId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "usernameId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "mealName": {
+          "type": "string"
+        },
+        "mealDesc": {
+          "type": "string"
+        },
+        "user": {
+          "type": "string"
+        },
+        "isActive": {
+          "type": "string"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BizRecipe": {
+      "type": "object",
+      "properties": {
+        "recipeId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "usernameId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cuisineId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "recipeName": {
+          "type": "string"
+        },
+        "calories": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateDrafted": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "datePublished": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "dateArchived": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "vegan": {
+          "type": "string"
+        },
+        "recipeStatus": {
+          "type": "string"
+        },
+        "usernameName": {
+          "type": "string"
+        },
+        "numIngredients": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "recipeImage": {
+          "type": "string"
+        },
+        "cuisineType": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BizUsername": {
+      "type": "object",
+      "properties": {
+        "usernameId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "usernameName": {
+          "type": "string"
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\bin\Debug\net6.0\RecipeSystem.deps.json
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\bin\Debug\net6.0\RecipeSystem.dll
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\bin\Debug\net6.0\RecipeSystem.pdb
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\bin\Debug\net6.0\CPUFramework.dll
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\bin\Debug\net6.0\CPUFramework.pdb
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\RecipeSystem.csproj.AssemblyReference.cache
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\RecipeSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\RecipeSystem.AssemblyInfoInputs.cache
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\RecipeSystem.AssemblyInfo.cs
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\RecipeSystem.csproj.CoreCompileInputs.cache
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\RecipeSystem.csproj.CopyComplete
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\RecipeSystem.dll
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\refint\RecipeSystem.dll
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\RecipeSystem.pdb
+C:\Users\sheva wedeck\source\repos\recipe\RecipeApps\RecipeSystem\obj\Debug\net6.0\ref\RecipeSystem.dll
